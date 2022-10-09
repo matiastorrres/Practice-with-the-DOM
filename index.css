@@ -55,7 +55,6 @@ img {
   max-width: var(--container-width);
   min-height: 100vh;
   text-align: center;
-  background-color: cornflowerblue;
   border: solid black 2px;
 }
 .panel {
@@ -154,4 +153,35 @@ img {
 .hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+/*  button theme dark */
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.dark-theme-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dark-mode {
+  background-color: var(--second-color);
+  color: var(--main-color);
 }

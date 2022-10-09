@@ -1,8 +1,9 @@
 import hamburgerMenu from "./modulos/menu_hamburguesa.js";
 import { digitalClock, alarm } from "./modulos/Reloj.js";
 import { shortcuts, moveBall } from "./modulos/teclas.js";
-import { countdown } from "./modulos/cuenta_regresiva.js";
+// import { countdown } from "./modulos/cuenta_regresiva.js";
 import scrollTop from "./modulos/button_scroll.js";
+import buttonTheme from "./modulos/button_theme.js";
 
 const d = document;
 
@@ -18,3 +19,5 @@ d.addEventListener("keydown", (e) => {
   shortcuts(e);
   moveBall(e);
 });
+
+buttonTheme();
