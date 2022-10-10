@@ -3,6 +3,7 @@ const d = document,
   moon = "🌙",
   sun = "☀️",
   l = localStorage;
+
 //esta es la forma de seleccionar elementos del dom segun un data-atribute
 const $selectores = d.querySelectorAll("[data-dark]");
 const dark = () => {

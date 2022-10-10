@@ -4,6 +4,8 @@ import { shortcuts, moveBall } from "./modulos/teclas.js";
 // import { countdown } from "./modulos/cuenta_regresiva.js";
 import scrollTop from "./modulos/button_scroll.js";
 import buttonTheme from "./modulos/button_theme.js";
+import responsiveMedia from "./modulos/objeto_response.js";
+import popup from "./modulos/responsive_tester.js";
 
 const d = document;
 
@@ -13,6 +15,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   alarm("assets/alarm.mp3", "#activar-alarma", "#desactivar-alarma");
   // countdown();
   scrollTop();
+  responsiveMedia();
+  popup();
 });
 
 d.addEventListener("keydown", (e) => {
