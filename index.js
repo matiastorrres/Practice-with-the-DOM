@@ -6,6 +6,7 @@ import scrollTop from "./modulos/button_scroll.js";
 import buttonTheme from "./modulos/button_theme.js";
 import responsiveMedia from "./modulos/objeto_response.js";
 import popup from "./modulos/responsive_tester.js";
+import userDeviceInfo from "./modulos/user_device.js";
 
 const d = document;
 
@@ -17,6 +18,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   scrollTop();
   responsiveMedia();
   popup();
+  userDeviceInfo();
 });
 
 d.addEventListener("keydown", (e) => {
