@@ -7,6 +7,8 @@ import buttonTheme from "./modulos/button_theme.js";
 import responsiveMedia from "./modulos/objeto_response.js";
 import popup from "./modulos/responsive_tester.js";
 import userDeviceInfo from "./modulos/user_device.js";
+import networkStatus from "./modulos/deteccion_red.js";
+import webCam from "./modulos/deteccion_webcam.js";
 
 const d = document;
 
@@ -19,6 +21,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   responsiveMedia();
   popup();
   userDeviceInfo();
+  webCam("webcam");
 });
 
 d.addEventListener("keydown", (e) => {
@@ -27,3 +30,4 @@ d.addEventListener("keydown", (e) => {
 });
 
 buttonTheme();
+networkStatus();

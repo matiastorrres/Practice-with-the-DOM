@@ -185,3 +185,20 @@ img {
   background-color: var(--second-color);
   color: var(--main-color);
 }
+
+/* estilo para clase 93 network status*/
+.online,
+.offline {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+.offline {
+  background-color: red;
+}

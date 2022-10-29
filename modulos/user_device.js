@@ -1,7 +1,6 @@
 const d = document,
   n = navigator;
 export default function userDeviceInfo() {
-  console.log(n.userAgent);
   const $id = d.getElementById("user-device");
   const isMobile = {
     android: () => n.userAgent.match(/androi/i),
