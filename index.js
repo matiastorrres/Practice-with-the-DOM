@@ -9,6 +9,8 @@ import popup from "./modulos/responsive_tester.js";
 import userDeviceInfo from "./modulos/user_device.js";
 import networkStatus from "./modulos/deteccion_red.js";
 import webCam from "./modulos/deteccion_webcam.js";
+import getGeolocation from "./modulos/geolocalizacion.js";
+import searchFilters from "./modulos/filtros_busquedas.js";
 
 const d = document;
 
@@ -22,6 +24,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   popup();
   userDeviceInfo();
   webCam("webcam");
+  getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
 });
 
 d.addEventListener("keydown", (e) => {
