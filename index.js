@@ -11,6 +11,10 @@ import networkStatus from "./modulos/deteccion_red.js";
 import webCam from "./modulos/deteccion_webcam.js";
 import getGeolocation from "./modulos/geolocalizacion.js";
 import searchFilters from "./modulos/filtros_busquedas.js";
+import draw from "./modulos/sorteo.js";
+import carrusel from "./modulos/carrusel.js";
+import scrollSpy from "./modulos/Scoll_espia.js";
+import smartVideo from "./modulos/Video_inteligente.js";
 
 const d = document;
 
@@ -26,6 +30,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
   webCam("webcam");
   getGeolocation("geolocation");
   searchFilters(".card-filter", ".card");
+  draw();
+  carrusel();
+  scrollSpy();
+  smartVideo();
 });
 
 d.addEventListener("keydown", (e) => {
