@@ -14,7 +14,8 @@ import searchFilters from "./modulos/filtros_busquedas.js";
 import draw from "./modulos/sorteo.js";
 import carrusel from "./modulos/carrusel.js";
 import scrollSpy from "./modulos/Scoll_espia.js";
-import smartVideo from "./modulos/Video_inteligente.js";
+import smartVideo from "./modulos/video_inteligente.js";
+import contactFormValidations from "./modulos/Validaciones_formularios.js";
 
 const d = document;
 
@@ -34,6 +35,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   carrusel();
   scrollSpy();
   smartVideo();
+  contactFormValidations();
 });
 
 d.addEventListener("keydown", (e) => {
